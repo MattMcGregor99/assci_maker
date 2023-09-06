@@ -47,7 +47,6 @@ def make_csv_data(data, length):
     return csv_data
 
 
-
 # else:
 #     rows = 8
 #     columns = 2
