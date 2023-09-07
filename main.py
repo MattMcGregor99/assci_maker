@@ -58,9 +58,7 @@ def generate_matrix(rows, columns, order, flip_row=False, flip_column=False):
     if flip_column:
         for row in matrix:
             row.reverse()
-
-    return matrix
-
+    
 def print_matrix(matrix, csv_data=None, arduino_data=None, str_before="", str_after="", global_padding=0, title="", title_position="top"):
 #add csv_data to each bit of text add correspiodning padding to make it look nice so its like A | 1  2 | B\nC | 3  4 | D\n for eample
     longest = 0
@@ -182,15 +180,6 @@ def print_matrix(matrix, csv_data=None, arduino_data=None, str_before="", str_af
         print(header)
         print(text)
         print(footer)
-
-def make_csv_data(data, length):
-    csv_data = ""
-    for i in range(1, length + 1):
-        if i in data:
-            csv_data += data[i] + ","
-        else:
-            csv_data += ","
-    return csv_data
 
 def get_user_input():
 #while rows <1 or not valid

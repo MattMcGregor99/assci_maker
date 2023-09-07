@@ -25,3 +25,12 @@ Example of where they'd go to a microcontroller for instance
       (18) │ 4   3 │
      (3V3) │ 2   1 │ (GND)
            └───────┘
+
+# Usage
+Just run it in cli or via vscode and input corresponding values when prompted. YOu can skip some fields if a value isn't desired/required
+
+# Future
+
+- Add custom padding to inside of box
+- Add custom padding to outside of box
+- Clean code up majorly
